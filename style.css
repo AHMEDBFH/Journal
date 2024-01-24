@@ -1,10 +1,9 @@
 /* i want to make the elements side by side  */
 .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   min-height: 100vh;
-
-  flex: 0 1 auto;
 }
 
 /* adding background on the page */
@@ -23,7 +22,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  flex: 1;
 }
 
 p {
@@ -32,20 +30,40 @@ p {
   font-style: italic;
 }
 
+.images {
+  display: flex;
+  margin-left: 50px;
+  gap: 50px;
+}
+
 .html-logo,
 .sql-logo,
 .js-logo {
-  display: inline-block;
-
   height: 120px;
   width: 120px;
   align-items: center;
-  margin-left: 30px;
+  margin-left: 50px;
   border-radius: 35px;
+  transition: width 0.2s ease-in-out;
 }
 
-.navbar {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
+.js-logo:hover {
+  width: 200px;
 }
+
+.html-logo:hover,
+.sql-logo:hover {
+  width: 200px;
+}
+.week-div1,
+.week-div2,
+.aboutMe {
+  border: 3px solid #0395d8;
+  border-radius: 10px;
+  /* transition: width 0.2s ease-in-out; */
+}
+/* .week-div1:hover,
+.week-div2:hover,
+.aboutMe:hover {
+  width: 700px;
+} */
