@@ -81,6 +81,8 @@ p {
 .hobby:link,
 .hobby:active {
   font-size: 16px;
+  transition: all 0.1s;
+  text-decoration: none;
 }
 
 .hobby:hover {
@@ -88,6 +90,8 @@ p {
   color: red;
   font-weight: bold;
   text-transform: uppercase;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 @keyframes hobbies {
