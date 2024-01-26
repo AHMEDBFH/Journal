@@ -1,9 +1,14 @@
 /* i want to make the elements side by side  */
 .container {
+  height: 100vh;
+  transition: 300ms;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  min-height: 100vh;
+}
+
+.container:hover {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* adding background on the page */
@@ -27,7 +32,7 @@ body {
 p {
   line-height: 25px;
   font-size: 20px;
-  font-style: italic;
+  font-style: normal;
 }
 
 .images {
@@ -67,3 +72,32 @@ p {
 .aboutMe:hover {
   width: 700px;
 } */
+
+.hobby:hover {
+  text-align: center;
+  animation: hobbies 2s ease-in-out;
+}
+
+.hobby:link,
+.hobby:active {
+  font-size: 16px;
+}
+
+.hobby:hover {
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@keyframes hobbies {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

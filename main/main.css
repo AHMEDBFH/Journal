@@ -1,0 +1,9 @@
+.container {
+  height: 50px;
+  width: 50px;
+  background-color: aqua;
+}
+body {
+  background-image: url("images/blue-curve-background_53876-113112.avif");
+  height: 100vh;
+}
